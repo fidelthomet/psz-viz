@@ -1,0 +1,15 @@
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=1dc25318-f2a9-45bb-ae99-bdf6752276ea");
+@font-face{
+    font-family:"DIN";
+    src:url("~fonts/215d2e40-5e98-4976-b7d4-80d770fb5de9.eot?#iefix");
+    src:url("~fonts/215d2e40-5e98-4976-b7d4-80d770fb5de9.eot?#iefix") format("eot"),url("~fonts/a173e9a2-1b5d-4cd0-bd6e-ee2185940233.woff2") format("woff2"),url("~fonts/ac5c3376-2fd7-405c-82f6-75ddc1f8d386.woff") format("woff"),url("~fonts/2fe26fac-819f-4bb8-adb0-4d1a62fab72d.ttf") format("truetype"),url("~fonts/1e2398cd-764e-4793-bdfe-de2505ea5c3c.svg#1e2398cd-764e-4793-bdfe-de2505ea5c3c") format("svg");
+		font-weight: bold;
+}
+@font-face{
+    font-family:"DIN";
+    src:url("~fonts/da088ecc-a53c-4831-a95b-6fd81b5b338a.eot?#iefix");
+    src:url("~fonts/da088ecc-a53c-4831-a95b-6fd81b5b338a.eot?#iefix") format("eot"),url("~fonts/44e7b0fa-6c8d-43c2-b19e-f1e3ce9ea57c.woff2") format("woff2"),url("~fonts/c5a7f89e-15b6-49a9-8259-5ea665e72191.woff") format("woff"),url("~fonts/868c94b5-ca49-46b7-b62b-297f8d861125.ttf") format("truetype"),url("~fonts/e3145f65-29b5-4f7f-8c6e-2dc135021b6a.svg#e3145f65-29b5-4f7f-8c6e-2dc135021b6a") format("svg");
+}
+
+$REGULAR: 40px/1 "DIN", sans-serif;
+$BOLD: bold 40px/1 "DIN", sans-serif;
