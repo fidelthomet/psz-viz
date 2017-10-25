@@ -48,7 +48,7 @@
     </transition>
 
     <transition name="fade">
-      <svg v-if="!largeScreen" class="buttons" width="32px" height="32px" viewBox="0 0 32 32">
+      <svg v-if="!largeScreen && visible" class="buttons" width="32px" height="32px" viewBox="0 0 32 32">
         <g fill-rule="nonzero" fill="#FFFFFF" stroke="none">
           <transition name="fade">
             <path v-if="showPane" d="M16,32 C7.163444,32 0,24.836556 0,16 C0,7.163444 7.163444,0 16,0 C24.836556,0 32,7.163444 32,16 C32,24.836556 24.836556,32 16,32 Z M22.363961,20.9497475 L18.1213203,16 L22.363961,11.0502525 L20.9497475,9.63603897 L16,13.8786797 L11.0502525,9.63603897 L9.63603897,11.0502525 L13.8786797,16 L9.63603897,20.9497475 L11.0502525,22.363961 L16,18.1213203 L20.9497475,22.363961 L22.363961,20.9497475 Z" id="Close"></path>
