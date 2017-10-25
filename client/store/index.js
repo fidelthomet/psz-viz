@@ -30,7 +30,8 @@ const state = {
     ['', ' schadet dem Ruf der Psychoanalyse.'],
     ['Das Wort «', '» ist ein schreckliches Modewort der Psychoanalyse.'],
     ['Von allen Psychoanalytikern mag ich die Sorte «', '» am liebsten.']
-  ]
+  ],
+  filter: null
 }
 
 const mutations = {
@@ -66,6 +67,10 @@ const mutations = {
   },
   SET_MAX_COUNT (state) {
     state.maxCount = 8
+  },
+  FILTER (state, val) {
+    state.filter = val
+    // console.log(state.filter)
   }
 }
 

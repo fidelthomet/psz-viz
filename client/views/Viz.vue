@@ -30,6 +30,7 @@ export default {
   },
   methods: {
     update () {
+      console.log([0, 0.25, 0.5, 0.75, 1].map(d => this.scale(d)))
       // fetch(`${this.$store.state.api}/all`) // http://psz.ft0.ch/api/all
       //   .then(res => res.json())
       //   .then(data => {
