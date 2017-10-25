@@ -17,7 +17,11 @@
           <line v-for="link in elLinks" v-if="(focused === null && showLines) || (focused !== null && (focused._id === link.target._id || focused._id === link.source._id))" :style="{opacity: focused === null ? 0.1 : 0.75}" :stroke-width="strokeWidth" :class="link.type" :x1="link.source.x" :y1="link.source.y" :x2="link.target.x" :y2="link.target.y"/>
         </g>
         <g>
-          <circle class="statement-circle" :fill="node.fill" :style="{opacity: node.opacity}" v-for="node in elNodes" v-if="node.type !== 'user'" @click="focus(node)" @mouseover="highlight(node)" @mouseleave="highlight(null)" :r="((node.controversityNorm12) || 4) / throttledZoom" :cx="node.x || 0" :cy="node.y || 0"/>
+          <circle class="statement-circle"
+          v-for="node in elNodes" v-if="node.type !== 'user'"
+          :fill="node.fill" :style="{opacity: node.opacity}"
+          :r="((node.controversityNorm12) || 4) / throttledZoom" :cx="node.x || 0" :cy="node.y || 0"
+          @click="focus(node)" @mouseover="highlight(node)" @mouseleave="highlight(null)"/>
         </g>
         <g>
           <g v-for="node in elNodes" v-if="node.type === 'user'" @mouseover="text = node.text" @mousleave="text = null" :transform="'translate(' + (node.x || 0) + ' ' + (node.y || 0) + ')'">
